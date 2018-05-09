@@ -11,12 +11,12 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <jmh.version>1.19</jmh.version>
+        <jmh.version>1.21</jmh.version>
         <javac.target>1.8</javac.target>
         <uberjar.name>benchmarks</uberjar.name>
         <version.com.h2database>1.4.196</version.com.h2database>
         <version.junit>4.11</version.junit>
-        <version.org.hibernate>5.2.12.Final</version.org.hibernate>
+        <version.org.hibernate>5.3.0.CR2</version.org.hibernate>
     </properties>
 
     <dependencies>
