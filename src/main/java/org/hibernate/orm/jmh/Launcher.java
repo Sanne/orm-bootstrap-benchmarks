@@ -6,6 +6,7 @@
  */
 package org.hibernate.orm.jmh;
 
+import org.openjdk.jmh.profile.ProfilerException;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
@@ -18,9 +19,12 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
  */
 public class Launcher {
 
-	public static void main(String[] args) throws RunnerException {
+	public static void main(String[] args) throws RunnerException, ProfilerException {
 		Options opt = new OptionsBuilder()
 				.include( BootstrapHibernateJPA.class.getSimpleName() )
+				.jvmArgs( "-XX:MetaspaceSize=80M", "-Xmx1G" )
+				.addProfiler( org.openjdk.jmh.profile.ClassloaderProfiler.class )
+//				.addProfiler( org.openjdk.jmh.profile.SafepointsProfiler.class )
 				.measurementIterations( 1 )
 				.forks( 10 )
 				.build();

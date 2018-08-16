@@ -36,9 +36,11 @@
             <property name="hibernate.format_sql" value="false"/>
 
             <!-- First run only : use create , then flip to validate to be close to the main use case -->
-            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+            <property name="hibernate.hbm2ddl.auto" value="none"/>
 
             <property name="javax.persistence.validation.mode" value="NONE"/>
+            
+            <property name="hibernate.ejb.cfgfile" value="custom-hibernate.cfg.xml"/>
         </properties>
 
     </persistence-unit>
