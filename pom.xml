@@ -12,6 +12,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jmh.version>1.21</jmh.version>
+        <jol.version>0.9</jol.version>
         <javac.target>1.8</javac.target>
         <uberjar.name>benchmarks</uberjar.name>
         <version.com.h2database>1.4.196</version.com.h2database>
@@ -30,6 +31,11 @@
             <artifactId>jmh-generator-annprocess</artifactId>
             <version>${jmh.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-core</artifactId>
+            <version>${jol.version}</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
