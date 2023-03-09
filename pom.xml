@@ -13,11 +13,11 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jmh.version>1.21</jmh.version>
         <jol.version>0.9</jol.version>
-        <javac.target>1.8</javac.target>
+        <javac.target>11</javac.target>
         <uberjar.name>benchmarks</uberjar.name>
         <version.com.h2database>1.4.196</version.com.h2database>
         <version.junit>4.11</version.junit>
-        <version.org.hibernate>5.3.5.Final</version.org.hibernate>
+        <version.org.hibernate>6.2.0.CR3</version.org.hibernate>
     </properties>
 
     <dependencies>
@@ -38,7 +38,7 @@
             <version>${jol.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>${version.org.hibernate}</version>
         </dependency>

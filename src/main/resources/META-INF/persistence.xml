@@ -38,9 +38,12 @@
             <!-- First run only : use create , then flip to validate to be close to the main use case -->
             <property name="hibernate.hbm2ddl.auto" value="none"/>
 
-            <property name="javax.persistence.validation.mode" value="NONE"/>
+            <property name="jakarta.persistence.validation.mode" value="NONE"/>
             
-            <property name="hibernate.ejb.cfgfile" value="custom-hibernate.cfg.xml"/>
+            <property name="hibernate.ejb.cyyfgfile" value="custom-hibernate.cfg.xml"/>
+
+            <!-- workaround https://hibernate.atlassian.net/browse/HHH-16276 deployment failure -->
+            <property name="hibernate.jpa.compliance.orderby" value="false"/>
         </properties>
 
     </persistence-unit>
