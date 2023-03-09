@@ -103,6 +103,11 @@ public class OBDynamicPropertyHandler implements PropertyAccessStrategy {
 			return get(owner);
 		}
 
+		@Override
+		public Class<?> getReturnTypeClass() {
+			return null;
+		}
+
 		public Class getReturnType() {
 			return null;
 		}
@@ -133,6 +138,11 @@ public class OBDynamicPropertyHandler implements PropertyAccessStrategy {
 			return null;
 		}
 
+		@Override
+		public void set(Object o, Object o1) {
+
+		}
+
 		public String getMethodName() {
 			return null;
 		}
@@ -143,8 +153,8 @@ public class OBDynamicPropertyHandler implements PropertyAccessStrategy {
 
 	}
 
-	@Override
-	public PropertyAccess buildPropertyAccess(final Class theClass, final String propertyName) {
+
+	public PropertyAccess buildPropertyAccess(Class<?> theClass, final String propertyName, boolean b) {
 		final OBDynamicPropertyHandler me = this;
 		// TODO Auto-generated method stub
 		return new PropertyAccess() {

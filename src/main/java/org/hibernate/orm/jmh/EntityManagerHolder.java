@@ -8,7 +8,7 @@ package org.hibernate.orm.jmh;
 
 import java.util.concurrent.atomic.AtomicReference;
 
-import javax.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityManagerFactory;
 
 import org.openjdk.jmh.annotations.Level;
 import org.openjdk.jmh.annotations.Scope;

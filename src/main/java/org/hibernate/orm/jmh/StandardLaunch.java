@@ -1,8 +1,8 @@
 package org.hibernate.orm.jmh;
 
 import java.io.IOException;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
 
 //Launch with: -XX:MetaspaceSize=80M -Xmx1G
 public class StandardLaunch {

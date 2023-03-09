@@ -25,7 +25,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import javax.persistence.UniqueConstraint;
+import jakarta.persistence.UniqueConstraint;
 
 /**
  * Models the business object type. The Entity is the main concept in the
